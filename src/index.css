@@ -101,7 +101,7 @@ All colors MUST be HSL.
     
     --gradient-primary: linear-gradient(135deg, hsl(0 100% 55%) 0%, hsl(0 100% 65%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(0 100% 55% / 0.95) 0%, hsl(0 100% 45% / 0.95) 100%);
-    --gradient-accent: linear-gradient(to right, hsl(0 100% 55%), hsl(122 100% 25%));
+    --gradient-accent: linear-gradient(to right, hsl(0 100% 55%), #008004);
     
     --shadow-elegant: 0 10px 40px -10px hsl(0 100% 55% / 0.3);
     --shadow-card: 0 4px 20px hsl(0 5% 10% / 0.2);

@@ -30,7 +30,7 @@ const Journey = () => {
     },
     {
       year: "Development",
-      title: "Lucknow Expressway",
+      title: "City Development",
       description: "Participated in successful infrastructure development projects benefiting thousands in the region"
     }
   ];

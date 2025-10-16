@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0">
             <h1 className="text-xl md:text-2xl font-display font-bold gradient-text">
-              Parmender Singh Bhati
+              Pramendra Singh Bhati
             </h1>
           </div>
 

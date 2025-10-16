@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
 
+import heroBannerMobile from "@/assets/hero-banner-mobile.png";
+
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
@@ -11,49 +13,70 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBanner})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-dark/90" />
-      </div>
+<section
+  id="home"
+  className="relative flex min-h-[600px] md:h-screen items-center justify-center overflow-hidden bg-[#B41F01]"
+>
+  {/* Desktop Background */}
+  <div
+    className="absolute inset-0 hidden bg-cover bg-center bg-no-repeat md:block"
+    style={{ backgroundImage: `url(${heroBanner})` }}
+  />
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="animate-fade-in">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground mb-6">
-            Parmender Singh Bhati
-          </h1>
-          <p className="text-xl sm:text-2xl md:text-3xl text-primary-foreground/90 mb-4 font-medium">
-            Advocate • Social Worker • Political Leader
-          </p>
-          <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto font-display italic">
-            "Think Positive, Be Positive – Service, Integrity, Results."
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              onClick={scrollToContact}
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-elegant text-lg px-8 py-6"
-            >
-              Join the Movement
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6"
-            >
-              Learn More
-            </Button>
-          </div>
-        </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="h-8 w-8 text-primary-foreground" />
-        </div>
+  {/* Content */}
+  <div className="relative z-10 container mx-auto mt-20 px-4 text-center sm:px-6 md:text-left lg:px-8">
+    <div className="animate-fade-in">
+      <h1 className="mb-6 font-display text-4xl font-bold text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+        Pramendra Singh Bhati
+      </h1>
+
+      <p className="mb-4 text-xl font-medium text-primary-foreground/90 sm:text-2xl md:text-3xl">
+        Advocate • Social Worker • Political Leader
+      </p>
+
+      <p className="mx-auto mb-8 font-display italic text-lg text-primary-foreground/80 sm:text-xl md:text-2xl">
+        "Think Positive, Be Positive – Service, Integrity, Results."
+      </p>
+
+      {/* Buttons */}
+      <div className="hidden flex-col items-center justify-start gap-4 sm:flex-row md:flex">
+        <Button
+          size="lg"
+          onClick={scrollToContact}
+          className="shadow-elegant bg-secondary px-8 py-6 text-lg text-secondary-foreground hover:bg-secondary/90"
+        >
+          Join the Movement
+        </Button>
+
+        <Button
+          size="lg"
+          variant="outline"
+          onClick={() =>
+            document
+              .getElementById("about")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="border-2 border-primary-foreground px-8 py-6 text-lg text-red-500 hover:bg-primary-foreground hover:text-primary"
+        >
+          Learn More
+        </Button>
       </div>
-    </section>
+    </div>
+
+    {/* Mobile Banner */}
+    <img
+      src={heroBannerMobile}
+      alt="Pramendra Singh Bhati"
+      className="mt-6 w-full md:hidden"
+    />
+  </div>
+
+  {/* Scroll Arrow */}
+  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 transform animate-bounce">
+    <ArrowDown className="h-8 w-8 text-primary-foreground" />
+  </div>
+</section>
+
   );
 };
 

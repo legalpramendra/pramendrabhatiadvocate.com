@@ -1,6 +1,9 @@
 import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
+import gallery2 from "@/assets/gallery-2.png";
+import gallery3 from "@/assets/gallery-3.png";
+import gallery4 from "@/assets/gallery-4.png";
+import gallery5 from "@/assets/gallery-5.png";
+import gallery6 from "@/assets/gallery-6.png";
 
 const Gallery = () => {
   const images = [
@@ -11,11 +14,26 @@ const Gallery = () => {
     },
     {
       src: gallery2,
-      alt: "Court infrastructure development",
-      title: "Infrastructure Development"
+      alt: "With the Visionary Leader, Akhilesh Yadav Ji",
+      title: "With the Visionary Leader, Akhilesh Yadav Ji"
     },
     {
       src: gallery3,
+      alt: "High Court Prayagraj",
+      title: "High Court Prayagraj"
+    },
+    {
+      src: gallery4,
+      alt: "Independence Day",
+      title: "Independence Day"
+    },
+    {
+      src: gallery5,
+      alt: "Supreme Court of India",
+      title: "Supreme Court of India"
+    },
+    {
+      src: gallery6,
       alt: "Grassroots engagement with farmers",
       title: "Grassroots Connect"
     }

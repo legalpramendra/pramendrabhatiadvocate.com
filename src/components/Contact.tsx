@@ -1,13 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
       title: "Location",
-      detail: "Noida & Gautam Buddh Nagar, Uttar Pradesh"
+      detail: "Bisrakh, Greater Noida West, Uttar Pradesh"
     },
     {
       icon: Phone,
@@ -17,14 +17,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      detail: "contact@example.com"
+      detail: "legal.pramendra@gmail.com"
     }
   ];
 
   const socialLinks = [
-    { icon: Facebook, label: "Facebook", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Instagram, label: "Instagram", href: "#" }
+    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/pramendra.singh.543" },
+    { icon: Linkedin, label: "Linkedin", href: "https://www.linkedin.com/in/pramendra-bhati-advocate/" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/president_pramendra_bhati_adv_/" }
   ];
 
   return (
@@ -60,15 +60,17 @@ const Contact = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4">Get Involved</h3>
               <p className="text-muted-foreground mb-6">
-                Whether you want to volunteer, learn more about our initiatives, or simply show your support, 
+                Whether you want to volunteer, learn more about our initiatives, or simply show your support,
                 we'd love to hear from you.
               </p>
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-elegant text-lg px-8 py-6"
-              >
-                Contact Us
-              </Button>
+              <a href="mailto:legal.pramendra@gmail.com">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-elegant text-lg px-8 py-6"
+                >
+                  Contact Us
+                </Button>
+              </a>
             </div>
 
             <div className="border-t border-border pt-8 mt-8">

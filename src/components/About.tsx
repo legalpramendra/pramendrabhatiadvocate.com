@@ -25,7 +25,7 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4">
-            About <span className="gradient-text">Parmender Singh Bhati</span>
+            About <span className="gradient-text">Pramendra Singh Bhati</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
         </div>
@@ -49,7 +49,7 @@ const About = () => {
           <Card className="p-8 md:p-12 shadow-card">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg leading-relaxed mb-6">
-                Parmender Singh Bhati is an advocate by profession, recognized for his disciplined upbringing under his father, 
+                Pramendra Singh Bhati is an advocate by profession, recognized for his disciplined upbringing under his father, 
                 a retired officer of the Indian Army who served with distinction in the 1965 and 1971 wars. Inspired by four 
                 generations of family involvement in social and political spheres, he chose law as a career to best serve society.
               </p>
